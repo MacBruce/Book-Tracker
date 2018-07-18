@@ -1,3 +1,5 @@
+
+
 public class Books {
     private int isbn;
     private int pages;
@@ -5,6 +7,7 @@ public class Books {
     private String publisher;
     private String genre;
     private String pubDate;
+    private String BookName;
 
     // set isbn
     public void setIsbn(int isbn) {
@@ -66,5 +69,13 @@ public class Books {
         return this.pubDate;
     }
 
+    //set bookname
+    public void setBookName(String bookName) {
+        this.BookName = bookName;
+    }
 
+    //get bookname
+    public String getBookName() {
+        return this.BookName;
+    }
 }

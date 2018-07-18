@@ -11,7 +11,7 @@ public class CheckOut {
 
     public static void checkBookOut(HashMap<String, String> item) {
         //if hashmap is not empty
-        if (item.size() > 0) {
+        if (!item.isEmpty()) {
             isCheckedOut = true;
             CheckOutHistory.add(item);
         }
@@ -28,9 +28,6 @@ public class CheckOut {
     public static String getDateCheckedOutLast() {
         return "";
     }
-
-
-
 
 
 }
